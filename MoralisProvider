@@ -1,0 +1,112 @@
+Moralis.authenticate().then(function (user) {
+    console.log(user.get('ethAddress'))
+})import { useMoralis } from "react-moralis";
+
+function App() {
+
+    const { authenticate, isAuthenticated, user } = useMoralis();
+
+    const login = async () => {
+      if (!isAuthenticated) {
+
+        await authenticate()
+          .then(function (user) {
+            console.log(user!.get("ethAddress"));
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    }
+}
+npm i moralis
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { MoralisProvider } from "react-moralis";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <MoralisProvider serverUrl="https://xxxxx/server" appId="YOUR_APP_ID">
+      <App />
+    </MoralisProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { MoralisProvider } from "react-moralis";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <MoralisProvider serverUrl="https://xxxxx/server" appId="YOUR_APP_ID">
+      <App />
+    </MoralisProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);// Get a (ethers.js) web3Provider
+const web3Provider = await Moralis.enableWeb3();
+// Get a (ethers.js) web3Provider
+const web3Provider = await Moralis.enableWeb3();
+npm install moralis react-moralis
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { MoralisProvider } from "react-moralis";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <MoralisProvider serverUrl="https://hydurag5jeq8.usemoralis.com:2053/server" appId="86zoYQf4yXe4xH8Jnz8e8irfUw0jODZ70SvnfaK6">
+      <App />
+    </MoralisProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+npm install react react-dom moralis react-moralis
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { MoralisProvider } from "react-moralis";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <MoralisProvider serverUrl="https://hydurag5jeq8.usemoralis.com:2053/server" appId="YOUR_APP_ID">
+      <App />
+    </MoralisProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+// Get a (ethers.js) web3Provider
+const web3Provider = await Moralis.enableWeb3();
+npm install web3
